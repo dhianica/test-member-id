@@ -1,5 +1,9 @@
 # Award Application
 
+ ## Demo Application
+ ![](https://gifyu.com/image/SdV8P)
+ <a href="https://gifyu.com/image/SdV8P"><img src="https://s11.gifyu.com/images/result-test-member-id.gif" alt="result-test-member-id.gif" border="0" /></a>
+
 ## Quick Start
 * Clone Application
 ```
@@ -84,7 +88,4 @@ Structure folder application
   * Open Browser
     - visit `http://localhost:3000`
     
- ## Demo Application
- ![](https://gifyu.com/image/SdV8P)
- <a href="https://gifyu.com/image/SdV8P"><img src="https://s11.gifyu.com/images/result-test-member-id.gif" alt="result-test-member-id.gif" border="0" /></a>
  
