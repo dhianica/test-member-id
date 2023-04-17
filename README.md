@@ -62,6 +62,16 @@ Structure folder application
     ```
     Application will be running in port 3000
     ```
+    
+   * #### for the best performance or go production you can build first
+     *  Build Application
+        ```
+        yarn build
+        ```
+     * Run Application
+        ```
+        yarn start
+        ```
   
 ## Testing Application
   * After exports sql we have 2 users email
