@@ -31,6 +31,7 @@ Structure folder application
     ```
     cd backend
     ```
+  * Rename file `.env.example` to `.env`
   * Install package
     ```
     yarn
