@@ -61,7 +61,8 @@ export default function Home() {
   
         setTimeout(() => {
           setError('')
-        }, 5000);
+          setBtnStatus(current => !current)
+        }, 3000);
       }
     } catch (error) {
       setIsValid(false)
@@ -70,7 +71,7 @@ export default function Home() {
       setTimeout(() => {
         setError('')
         setBtnStatus(current => !current)
-      }, 5000);
+      }, 3000);
     }
 
    

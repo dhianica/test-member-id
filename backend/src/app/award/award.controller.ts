@@ -23,11 +23,11 @@ class AwardController {
             errorCode: EErrorCode.APP + '-' + EApp.APP_CONTROLLER + '-' + generateCode(4)
           })
 
-        const { page = 0, size = 5, type = '', price = 0 } = request.query;
+        const { page = 0, size = 5, type = '', price = '0' } = request.query;
 
         const { limit, offset } = getPagination(parseInt(page as string, 10), parseInt(size as string, 10));
         console.log(type.toString())
-        const result = await AwardService.findAwardByUserId(user_id, type.toString(), price as number, limit, offset)
+        const result = await AwardService.findAwardByUserId(user_id, type.toString(), price.toString(), limit, offset)
         if (!result)
           response.json({
             message: EMessage.NOT_FOUND,

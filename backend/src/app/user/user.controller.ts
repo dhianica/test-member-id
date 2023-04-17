@@ -27,11 +27,11 @@ class UserController {
             message: EMessage.NOT_FOUND,
             detail: []
           })
-
-        response.json({
-          message: ESuccessMessage.FOUND,
-          detail: result
-        })
+        else
+          response.json({
+            message: ESuccessMessage.FOUND,
+            detail: result
+          })
       } catch (error: any) {
         next(error)
       }

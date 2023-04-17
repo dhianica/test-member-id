@@ -1,10 +1,10 @@
 import { Op } from 'sequelize'
 import Award from './award.model'
-import AwardType from './award-type.model'
+import AwardType from '../award-type/award-type.model'
 import User from '../user/user.model'
 
 class AwardService {
-  public static async findAwardByUserId(user_id: string, type?: string, price?: number, limit?: number, offset?: number): Promise<any> {
+  public static async findAwardByUserId(user_id: string, type?: string, price?: string, limit?: number, offset?: number): Promise<any> {
 
     User.hasMany(Award);
     Award.belongsTo(User, { foreignKey: 'user_id', constraints: false, targetKey: 'user_id' });
@@ -18,10 +18,12 @@ class AwardService {
         where = { ...where, ...{ award_type_id: types } }
     }
 
-    if (price !== 0)
+    if (price !== '0'){
+      const prices = price.split(',')
       where = { ...where, ...{ award_price: {
-        [Op.lte] : price
+        [Op.between] : [prices[0], prices[1]]
       } } }
+    }
 
 
     return await Award.findAndCountAll({
