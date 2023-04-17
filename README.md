@@ -23,7 +23,9 @@ Structure folder application
   * frontend
   
 ## Installation & Run Application
-* ### Exports Structure SQL
+* ### Database
+  * Create Database `test-member-id`
+  * Exports file `test-member-id-202304171917.sql`
 * ### Backend
   * Move folder backend
     ```
