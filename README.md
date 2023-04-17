@@ -62,10 +62,10 @@ Structure folder application
   
 ## Testing Application
   * After exports sql we have 2 users email
-    - muchammad.ilham@outlook.co.id
+    - user1@member.id
       - this is an user have a award
       
-    - muh.ilham0606@gmail.com
+    - user2@member.id
       - this is an user dont have a award
   
   * Open Browser
