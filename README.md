@@ -61,11 +61,13 @@ Structure folder application
     ```
   
 ## Testing Application
-After exports sql we have 2 users email
-  * muchammad.ilham@outlook.co.id
-    - this is an user have a award
-    
-  * muh.ilham0606@gmail.com
-    - this is an user dont have a award
+  * After exports sql we have 2 users email
+    - muchammad.ilham@outlook.co.id
+      - this is an user have a award
+      
+    - muh.ilham0606@gmail.com
+      - this is an user dont have a award
   
+  * Open Browser
+    - visit `http://localhost:3000`
  
